@@ -1,0 +1,30 @@
+Instrucciones de Instalación
+=====================================
+
+El siguiente proyecto está hecho en base a la prueba de diagnóstico por Desis para desarrolladores.
+
+REQUISITOS PREVIOS:
+- PostgreSQL 17
+- PHP 8.4.12
+
+PASOS PARA INICIAR EL PROYECTO:
+
+1. Crear la base de datos:
+   - Crear una base de datos llamada "prueba_desis" en PostgreSQL
+
+2. Ejecutar el script SQL:
+   - En la base de datos "prueba_desis", ejecutar el script SQL que se encuentra en la carpeta "sql"
+   - Este script creará las tablas e insertará los datos iniciales
+
+3. Configurar la conexión a la base de datos:
+   - Ir al archivo config.php que se encuentra en la carpeta "config"
+   - En la línea 11 y 12, poner nuestro usuario y contraseña de PostgreSQL respectivamente
+
+4. Iniciar el servidor:
+   - Ejecutar en la terminal el comando: php -S localhost:8000
+
+5. Acceder a la aplicación:
+   - Ir a la URL: localhost:8000
+   - Podremos visualizar en el navegador el formulario de producto
+
+Listo! El proyecto esta andando.

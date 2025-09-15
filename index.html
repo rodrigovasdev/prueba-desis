@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="formulario-producto">
+      <h1>Formulario de Producto</h1>
+      <div class="grid-container">
+        <div class="input-group">
+          <label for="codigo">Código</label>
+          <input type="text" name="codigo" placeholder="Código" />
+        </div>
+        <div class="input-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" placeholder="Nombre" />
+        </div>
+        <div class="input-group">
+          <label for="bodega">Bodega</label>
+          <select name="bodega">
+            <option value="">-- Seleccionar Bodega --</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="sucursal">Sucursal</label>
+          <select name="sucursal">
+            <option value="">-- Seleccionar Sucursal --</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="moneda">Moneda</label>
+          <select name="moneda">
+            <option value="">-- Seleccionar Moneda --</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="precio">Precio</label>
+          <input type="text" name="precio" placeholder="Precio" />
+        </div>
+      </div>
+      <label for="materiales">Material del Producto</label>
+      <div class="checkbox-group">
+        <!-- Checkboxes de materiales se cargarán aquí dinámicamente -->
+      </div>
+      <label for="descripcion">Descripción</label>
+      <textarea name="descripcion"></textarea>
+      <button class="btn" type="submit">Guardar Producto</button>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
