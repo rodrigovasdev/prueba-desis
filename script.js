@@ -26,7 +26,7 @@ async function cargarBodegas() {
     
     if (resultado.success) {
       // Limpiar opciones existentes excepto la primera (vacía)
-      selectBodega.innerHTML = '<option value="">-- Seleccionar Bodega --</option>';
+      selectBodega.innerHTML = '<option value=""></option>';
       
       // Agregar opciones al select desde la respuesta de la API
       resultado.data.forEach(bodega => {
@@ -66,7 +66,7 @@ async function cargarMonedas() {
     
     if (resultado.success) {
       // Limpiar opciones existentes excepto la primera (vacía)
-      selectMoneda.innerHTML = '<option value="">-- Seleccionar Moneda --</option>';
+      selectMoneda.innerHTML = '<option value=""></option>';
       
       // Agregar opciones al select desde la respuesta de la API
       resultado.data.forEach(moneda => {
@@ -144,7 +144,7 @@ async function cargarSucursales(bodegaId) {
   const selectBodega = document.querySelector("select[name='bodega']");
   
   // Limpiar opciones existentes excepto la primera (vacía)
-  selectSucursal.innerHTML = '<option value="">-- Seleccionar Sucursal --</option>';
+  selectSucursal.innerHTML = '<option value=""></option>';
   
   // Si no hay bodega seleccionada, mantener el select vacío
   if (!bodegaId) {
